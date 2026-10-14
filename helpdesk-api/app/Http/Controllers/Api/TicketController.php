@@ -28,6 +28,7 @@ class TicketController extends Controller
             'description' => 'required|string',
         ]);
 
+        
         $ticket = Ticket::create($data);
 
         // Generate a readable ticket number using the database ID
